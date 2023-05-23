@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: white;
+}
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+.container{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content{
+    width: 40%;
+    margin: auto;
+    background-color: #222222;
+    border-radius: 20px;
+}
+.container .content .login{
+    padding: 50px;
+    text-align: center;
+}
+.container .content .login h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+.container .content .login h3 i{
+    color: white;
+}
+.container .content .login input{
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.container .content .login button{
+    margin-top: 20px;
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    border: none;
+}
+.container .content .login button a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 10px 70px;
+}
+.container .content .singup{
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .singup div{
+    padding: 20px;
+}
+.container .content .singup div a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+@media (max-width: 1000px) {
+    .container .content{
+        width: 70%;
+    }
+}
+@media (max-width: 700px){
+    .container .content{
+        width: 90%;
+    }
+}

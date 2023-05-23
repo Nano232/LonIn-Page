@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: rgba(0, 0, 255, 0.5);
+}
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+.container{
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content{
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+.container .content .singup{
+    text-align: center;
+    padding: 50px 50px 30px 50px;
+}
+.container .content .singup h3{
+    color: var(--main-color);
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.container .content .singup p{
+    color: var(--main-color);
+}
+.container .content .singup div{
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .singup div input{
+    width: 49%;
+}
+.container .content .singup input{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 20px auto 0;
+}
+.container .content .login div{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .login div a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+@media (max-width: 1000px) {
+    .container .content{
+        width: 70%;
+    }
+}
+@media (max-width: 700px) {
+    .container .content{
+        width: 90%;
+    }
+    .container .content .singup div{
+        display: block;
+    }
+    .container .content .singup div input{
+        width: 100%;
+    }
+}
